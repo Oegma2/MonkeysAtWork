@@ -19,6 +19,13 @@ Example of running your MonkeysAtWork for CTest method:
    MonkeysAtWork 100 CTest "Foxy"
 ```
 
+## Future ideas
+1. We planning on making MonkeysAtWork a container solution that can spawn easily on servers
+2. Node based monkey's sending message for network traffic
+3. Allow different code modules to be added, for hot swapping tests - idea is to see how your for-loop impact a certain server/container
+4. Generate report after test-run
+5. Send sms/email/notification once monkey's completed
+
 ## Status of the Project
 This project is still under active development, so you might run into issues. 
 If you do, please don't be shy about letting us know, or better yet, contribute a fix or feature.
