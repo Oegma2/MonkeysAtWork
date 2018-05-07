@@ -29,8 +29,8 @@ namespace MonkeysAtWork
         //private static char[] possibleLetters = "abcdefghijklmnopqrstuvwxyz ".ToCharArray();
         private static int lettersCount = possibleLetters.Length;
         private static Random random = new Random((int)DateTime.Now.Ticks);
-        private static ulong monkies = 0;
-        private static ulong totalMonkies = 0;
+        private static long monkies = 0;
+        private static long totalMonkies = 0;
         private static int numOfTest = 10;
 
         #endregion
@@ -220,11 +220,23 @@ namespace MonkeysAtWork
             Console.WriteLine("Avg time: " + avgTime + "ms with avg monkey count [" + totalMonkies / numOfTest + "]");
         }
 
+        public static double Factorial(int number)
+        {
+            if (number == 0)
+                return 1;
+
+            double factorial = 1;
+            for (int i = number; i >= 1; i--)
+            {
+                factorial = factorial * i;
+            }
+            return factorial;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("MonkeysAtWork - Load testing tool V0.0.2");
             Console.WriteLine("");
-            Console.WriteLine(ulong.MaxValue);
 
             if (args.Length <= 0)
             {
