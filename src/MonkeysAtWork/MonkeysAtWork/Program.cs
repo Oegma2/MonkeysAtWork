@@ -25,8 +25,7 @@ namespace MonkeysAtWork
     {
         #region PRIVATE PROPERTIES
 
-        private static char[] possibleLetters = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();
-        //private static char[] possibleLetters = "abcdefghijklmnopqrstuvwxyz ".ToCharArray();
+        private static char[] possibleLetters = "abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ".ToCharArray();        
         private static int lettersCount = possibleLetters.Length;
         private static Random random = new Random((int)DateTime.Now.Ticks);
         private static long monkies = 0;
